@@ -23,7 +23,7 @@ import javax.swing.JOptionPane;
 
 			// 4. countdown from user's starting point
 			// 1. countdown from 10 to 0
- int i = JOptionPane.showInputDialog("When should I start?");
+ string i = JOptionPane.showInputDialog("When should I start?");
 		 for (int i1 = i1; i1 > 0; i1--) {
 	speak(i1+"");
 }
