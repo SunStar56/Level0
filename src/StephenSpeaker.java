@@ -1,4 +1,4 @@
-
+//Just copy/paste the code into a project.
 public class StephenSpeaker {
 	public static void main(String[] args) {
 		speak("This is a test. :)");
