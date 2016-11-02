@@ -20,5 +20,6 @@ public class ChangeCalculator {
 		NumberFormat nf = NumberFormat.getCurrencyInstance();
 
 		JOptionPane.showMessageDialog(null, "Your total change is " + nf.format(totalb) + ".");
+
 	}
 }
