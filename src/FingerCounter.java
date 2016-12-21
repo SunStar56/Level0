@@ -53,19 +53,17 @@ public class FingerCounter {
 
 		for (int i = 0; i < numrepeat; i++) {
 			int begintplusone = begint + 1;
-			if(endint > 0) {
+			if (endint > 0) {
 				System.out.println(begint + " plus one is " + begintplusone);
 				begint = begint + 1;
 			} else {
 				System.out.println(begint + " minus one is " + begintplusone);
 				begint = begint - 1;
-				
+
 			}
 		}
 		int solution = endint + begintoriginal;
 		System.out.println(begintoriginal + " plus " + endint + " is " + solution + ".");
-	if (int < 0) {
-		
-	}
+
 	}
 }

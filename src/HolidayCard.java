@@ -11,7 +11,8 @@ import org.teachingextensions.logo.TurtlePanel;
 public class HolidayCard extends MouseAdapter {
 
 	double treeWidth = 15;
-	double scale = 1.1; // This is how much the width of the tree grows with each layer
+	double scale = 1.1; // This is how much the width of the tree grows with
+						// each layer
 
 	/* 1. Paste your methods from the Christmas Tree Recipe here. */
 	Color forestGreen = new Color(0, 62, 34);
@@ -55,7 +56,7 @@ public class HolidayCard extends MouseAdapter {
 
 	/* 3. Personalize your card. */
 	void drawGreetingAndSing() {
-		playmusic(music.wav);
+
 		writeGreeting("Merry Christmas!");
 
 	}
