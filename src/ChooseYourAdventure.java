@@ -8,9 +8,9 @@ public class ChooseYourAdventure {
 		Scanner scanner = new Scanner(System.in);
 		int x = 0;
 		int y = 0;
+		int e = 1;
 		int random = new Random().nextInt(5);
-		System.out.println(
-				"You are standing east of an abandoned house, with forest on all sides.  Where should you go?");
+		System.out.println("You are standing east of an abandoned house, with forest on all sides.  Where should you go?");
 		while (true) {
 			String line = scanner.nextLine();
 			System.out.println(line);
@@ -47,8 +47,8 @@ public class ChooseYourAdventure {
 					random = new Random().nextInt(5);
 				}
 			}
-			CYAMethods.getDescription(x, y);
-			System.out.println(x + " , " + y);
+			CYAMethods.getDescription(x, y, e);
+			System.out.println(x + " , " + y + " , " + e);
 		}
 
 	}
