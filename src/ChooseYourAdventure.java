@@ -14,7 +14,11 @@ public class ChooseYourAdventure {
 		while (true) {
 			String line = scanner.nextLine();
 			System.out.println(line);
-			if (line.equalsIgnoreCase("west") || line.equalsIgnoreCase("go west")) {
+			if (line.equalsIgnoreCase("down") || line.equalsIgnoreCase("go down")) {
+				e = e - 1;
+			} else if (line.equalsIgnoreCase("up") || line.equalsIgnoreCase("Go up")) {
+				e = e + 1;
+			} else if (line.equalsIgnoreCase("west") || line.equalsIgnoreCase("go west")) {
 				x = x - 1;
 			} else if (line.equalsIgnoreCase("east") || line.equalsIgnoreCase("go east")) {
 				x = x + 1;
