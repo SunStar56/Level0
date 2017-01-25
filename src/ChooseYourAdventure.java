@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class ChooseYourAdventure {
 	public static int housedooropen = 0;
+	public static int lookedcat = 0;
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -10,12 +11,13 @@ public class ChooseYourAdventure {
 		int y = 0;
 		int e = 1;
 		int random = new Random().nextInt(5);
-		System.out.println("You are standing east of an abandoned house, with forest on all sides.  Where should you go?");
+		System.out.println(
+				"You are standing east of an abandoned house, with forest on all sides.  Where should you go?");
 		while (true) {
 			String line = scanner.nextLine();
 			System.out.println(line);
 			if (line.equalsIgnoreCase("examine cat") || line.equalsIgnoreCase("look at cat")) {
-
+				lookedcat = 1;
 			} else if (line.equalsIgnoreCase("down") || line.equalsIgnoreCase("go down")) {
 				e = e - 1;
 			} else if (line.equalsIgnoreCase("up") || line.equalsIgnoreCase("Go up")) {
